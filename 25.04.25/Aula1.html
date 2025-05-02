@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    <script>
+        //Primeiros passos
+
+        Num1 = parseFloat(prompt("Entre com o primeiro número: "));
+        Num2 = parseFloat(prompt("Entre com o segundo número: "));
+        
+        var Resultado = Num1 + Num2;
+        alert(`Resultado é: ${Resultado}`);
+    </script>
+    -->
+
+    <!--
+
+    <script>
+        //Implementação de condicional
+        var sexo = prompt("Entre com M para masculino e F para feminino");
+        altura = parseFloat(prompt("Entre com a sua altura"));
+
+        if (sexo ==="M"){
+            var PesoIdeal = (72.7*altura)-58;
+        }else{
+            var PesoIdeal = (62.1*altura)-44.7;
+        }
+        alert(`Seu peso ideal é: ${PesoIdeal.toFixed(2)}`); //toFixed formata quantas casas decimais   
+    </script>
+    -->
+    <!--
+
+    <script>
+        var contador = 0;
+        var soma = 0;
+        do {
+            contador++;
+            var nota = parseFloat(prompt(`Entre com a ${contador}ª nota: `))
+            soma += nota;
+
+            var confirma = confirm("Digite em ok para sair");
+        } while (!confirma);
+        soma /= contador;
+        alert(`A média é de ${soma.toFixed(2)}`);
+    </script>
+
+    -->
+    <!--
+    <script>
+        var sequencia="";
+        for (var i = 0; i < 20; i+=2){
+            sequencia += " - " + i;
+            console.log(sequencia)
+        }
+        alert(sequencia)
+    </script>
+    -->
+
+    <!--
+    <script>
+        var altura = [];
+        for (let i = 0; i < 5; i++){
+            var b = i + 1;
+            alt = parseFloat(prompt(`Entre com a ${b}ª altura: `));
+            altura.push(alt);
+        }
+        var maximo = Math.max(...altura)
+        var minimo = Math.min(...altura)
+        altura.toString();
+        alert(altura);
+        alert(maximo);
+        alert(minimo);
+        
+
+    </script>
+    -->
+
+    <!-- DIA 30/04/2025 -->
+
+    
+<!-- 
+    <script>
+        var a = "|Aprendendo JavaScript| ";
+        for (let i = 0; i < 20; i++ ){
+            j = i + 1;
+            console.log("-------------------------- -----------------------");    
+                console.log("|"+j+a + a + "\n");
+                
+                                       
+        }
+        console.log("-------------------------- -----------------------");
+    </script>
+    -->
+   
+    <!--
+    <script>
+        var text1 = "---------------------------------";
+        var text2 = " | Aprendendo JavaScript";
+        for (let i = 1; i <= 20; i++){
+            console.log(text1 + "|" + text1);
+            console.log("| " + i + text2 + "| " + i + text2);
+        }
+        console.log(text1 + "|" + text1);
+        
+
+    </script>
+    -->
+
+    
+    <!--
+    <script>
+        var a =[[1, 2], [2,2]]
+        for (let i = 0; i < 1 ; i++){
+            for (let j = 0; j < 1 ; j++){
+                a.push("2");
+            }
+        }
+        for (let i = 0; i < 1 ; i++){
+            for (let j = 0; j < 1 ; j++){
+                console.log(a);
+            }
+        }
+    </script>
+    -->
+    
+
+    <!--
+    <script>
+        let i = 2;
+        while (i < 20){
+            console.log(i + "- Aprendendo JS");
+            i = i + 2;
+        }
+    
+    </script>
+    -->
+
+    
+
+
+
+        
+</body>
+</html>

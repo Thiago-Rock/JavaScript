@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    7) Implemente um programa usando laço (for) que imprime de forma alternada as palavras “Aprendendo” e 
+    “Javascript” 100 vezes , usar o comando console.log() . (Dica: Use o operador mod %)
+    
+    <script>
+        lim = parseInt(prompt("Entre com um limite: "));
+        for (let i = 1; i <= lim; i++){
+            if (i % 2 != 0){
+                console.log("Aprendendo");
+                //console.log(i);
+            }
+            else{
+                console.log("JavaScript");
+                //console.log(i);
+            }
+           
+        }
+    </script>
+    -->
+    <!--
+    8) Implemente um programa usando laço (do while) e o comando console.log()  
+    que imprime um triangulo usando o caractere X da seguinte forma:
+        X
+        X  X
+        X  X  X
+        X  X  X  X
+        X  X  X  X  X
+        X  X  X  X  X  X
+        <script>
+            let a = '';
+            let lin = 1;
+            let col = 1;
+            do {
+                do {
+                    a = a + 'x';
+                    console.log(a);
+                    col++;
+                } while (col <= lin);
+                lin++;
+            } while (lin<=6);
+        </script>
+        -->
+        
+        <!-- 
+        9) Implemente um programa usando laço (do while)  e o comando console.log() que imprime um triangulo 
+        usando o caractere X da seguinte forma:
+        X  X  X  X  X  X 
+        X  X  X  X  X
+        X  X  X  X
+        X  X  X
+        X  X 
+        x
+        <script>
+            let a = '';
+            let lin = 1;
+            let col = 6;
+            do {
+                do {
+                    a = a + 'x';
+                    col--;
+                } while (col >= lin);
+                console.log(a);
+                a = '';
+                col = 6;
+                lin++;
+            } while (lin <= 6);
+        </script>
+        -->
+
+        <!--
+        10) Implemente um programa usando laço (for)  e o comando console.log()  
+        que imprime um triangulo usando o caractere X da seguinte forma:
+        X
+        X  X
+        X  X  X
+        X  X  X  X
+        X  X  X  X  X
+        X  X  X  X  X  X 
+        X  X  X  X  X
+        X  X  X  X
+        X  X  X
+        X  X
+        X
+        -->
+        <script>
+            let a = '';
+            for (let lin = 0; lin < 6; lin++){
+                a = a + 'x ';
+                console.log(a);
+            }
+            a = '';
+            for (lin = 0; lin < 5; lin++){
+                for (let col = 5; col > lin; col--){
+                    a =  a + 'x ';
+                }
+                console.log(a);
+                a = '';
+            }
+        </script>
+        
+
+        
+
+
+</body>
+</html>

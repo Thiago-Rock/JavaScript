@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        <script>
+            let opcao = parseInt(prompt('Entre com a opção de 1 a 3'));
+            switch(opcao){
+                case 1:
+                console.log('Você digitou o 1');
+                break;
+                case 2:
+                console.log('Você digitou o 2');
+                break;
+                case 3:
+                console.log('Você digitou o 3');
+                break;
+                default:
+                console.log('Você não digitou um número válido');
+                break;
+            }
+            
+        </script>
+        -->
+
+        <!-- 
+        Exercício 1
+        ■  Elabore um algoritmo para implementar uma calculadora que realize as operações soma, subtração, 
+        multiplicação e divisão.  O algoritmo deve ler 2 números reais e a operação usando os caracteres  
+        “ +, - , *, / “  para identificar a operação. Como resposta deve apresentar os números a operação 
+        entre eles e o resultado da operação.
+        
+        <script>
+            alert('Calculadora');
+            a = parseFloat(prompt('Entre com o primeiro número'));
+            let operador = prompt('Entre com uma das operações básicas: ') ;
+            b = parseFloat(prompt('Entre com o segundo número'));
+            let Resultado = 0;
+            
+            switch(operador){
+                case '+':
+                    Resultado = a + b;
+                    console.log(a + ' + ' + b + ' = ' + Resultado );
+                    break;
+                    case '-':
+                    
+                    Resultado = a - b;
+                    console.log(a + ' - ' + b + ' = ' + Resultado );
+                    break;
+                    case '*':
+                   
+                    Resultado = a * b;
+                    console.log(a + ' * ' + b + ' = ' + Resultado );
+                    break;
+                    case '/':
+                    
+                    Resultado = a / b;
+                    console.log(a + ' / ' + b + ' = ' + Resultado );
+                    break;
+                    
+                }
+                
+            </script>
+            -->
+
+            <!--
+            Exercício 2
+            ■   Desenvolva um algoritmo para calcular a área e o perímetro de figuras geométricas. 
+            O usuário deverá escolher o polígono e informar os dados necessários para proceder os 
+            cálculos da seguinte forma: Para uma circunferência (C), quadrado (Q), e retângulo (R).
+            
+            <script>
+                console.log('Programa para calcular área e perímetro das figuras geométricas');
+                let opcao = prompt('Para uma circunferência (C), quadrado (Q), e retângulo (R)');
+                let opcaoMaiuscula = opcao.toUpperCase();
+                let area = 0;
+                let perimetro = 0;
+                let pi = 3.14;
+                switch(opcaoMaiuscula){
+                    case 'C':
+                        let raio = parseFloat(prompt('Entre com a medida do raio:'));
+                        area = pi*raio**2;
+                        perimetro = 2*pi*raio;
+                        console.log('A área da circunferência de raio ' + raio + ' é = ' + area +' u²');
+                        console.log('O perímetro da circunferência de raio ' + raio + ' é = ' + perimetro +' u');
+                        break;
+                        case 'Q':
+                        let lado = parseFloat(prompt('Entre com a medida do lado do quadrado:'));
+                        area = lado**2;
+                        perimetro = 4*lado;
+                        console.log('A área do quadrado de lado ' + lado + ' é = ' + area +' u²');
+                        console.log('O perímetro do quadrado de lado ' + lado + ' é = ' + perimetro +' u');
+                        break;
+                        case 'R':
+                        let comprimento = parseFloat(prompt('Entre com a medida do comprimento do retêngulo:'));
+                        let largura = parseFloat(prompt('Entre com a medida da largura do retângulo:'));
+                        area = comprimento*largura;
+                        perimetro = 2*comprimento + 2*largura;
+                        console.log('A área do quadrado de lado ' + lado + ' é = ' + area +' u²');
+                        console.log('O perímetro do quadrado de lado ' + lado + ' é = ' + perimetro +' u');
+                        break;
+                        
+                        
+                    }
+                </script>
+                -->
+
+                <!-- 
+                Exercício 3
+                ■  Elabore um algoritmo que calcule o que deve ser pago por um produto, 
+                considerando o preço normal de etiqueta e a escolha da condição de pagamento. 
+                Utilize os códigos da tabela a seguir para ler qual a opção de pagamento escolhida e 
+                efetuar o cálculo adequado. 
+                Código Condição de pagamento: 
+
+                ■  1 - À vista em dinheiro ou cheque, recebe 15% de desconto 
+                ■  2 - À vista no cartão de crédito, recebe 10% de desconto 
+                ■  3 - Em duas vezes, preço normal de etiqueta sem juros 
+                ■  4 - Em três vezes, preço normal de etiqueta mais juros de 10%.
+                -->
+
+                <script>
+                    const ValorProduto = parseFloat(prompt('Qual o valor do produto: '));
+                    let ValorProdutoFinal = 0;
+                    let parcela = 0;
+                    const Opcao = parseInt(prompt('Código Condição de pagamento:\n\n\n1 - À vista em dinheiro ou cheque, recebe 15% de desconto  \n2 - À vista no cartão de crédito, recebe 10% de desconto    \n3 - Em duas vezes, preço normal de etiqueta sem juros          \n4 - Em três vezes, preço normal de etiqueta mais juros de 10%.'));
+                    switch(Opcao){
+                        case 1:
+                            ValorProdutoFinal = ValorProduto*(1 - 0.15);
+                            console.log('O valor do produto fica R$ ' + ValorProdutoFinal);
+                            break;
+                        case 2:
+                            ValorProdutoFinal = ValorProduto*(1 - 0.1);
+                            console.log('O valor do produto fica R$ ' + ValorProdutoFinal);
+                            break;
+                        case 3:
+                        ValorProdutoFinal = ValorProduto/2;
+                            console.log('A Parcela do produto fica R$ ' + ValorProdutoFinal);
+                            break;
+                        case 4:
+                            parcela = ValorProduto*(((1+0.10)**3)*0.10)/(((1+0.10)**3)-1);
+                            ValorProdutoFinal = 3*parcela;
+                            console.log('A Parcela do produto fica R$ ' + parcela.toFixed(2));
+                            console.log('O total a pagar será R$ ' + ValorProdutoFinal.toFixed(2));
+                            break;
+                    }
+                </script>
+        
+</body>
+</html>
