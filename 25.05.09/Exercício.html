@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        <script>
+            let palavra1 = prompt('Entre com a primeira palavra');
+            let palavra2 = prompt('Entre com a segunda palavra');
+            let Maiusculapalavra1 = palavra1.toUpperCase();
+            let Maiusculapalavra2 = palavra2.toUpperCase();
+            
+            if (Maiusculapalavra1 === Maiusculapalavra2){
+                console.log('Palavras iguais');
+            } else{
+                console.log('Palavras diferentes');
+            }
+        </script>
+        -->
+
+        <!--
+        1) Implemente um programa javascript em que você entra com um prompt com a descrição 
+        “entre com seu nome”. Em seguida, será apresentado um outro prompt com a descrição 
+        “entre com sua idade”. Um alerta deverá então ser apresentado com o seu nome concatenado 
+        com sua idade.
+        
+        <script>
+            let Nome = prompt('Entre com seu nome:');
+            let Idade = prompt('Entre com a sua idade:');
+            alert('Seu nome é: ' + Nome + ' e a sua idade é: ' + Idade + ' anos');
+        </script>
+        -->
+
+        <!--
+        2) Implemente um programa javascript em que você entra com um prompt com a descrição 
+        “Entre com seu nome: ” . Em seguida outro prompt que solicita o ano de seu nascimento 
+        “Entre com ano de nascimento :  ” o programa deve apresentar a mensagem de confirmação :
+        Bem vindo,  xxxxxxx  sua idade é  yyy  , confirma ? 
+        
+        <script>
+            let Nome = prompt('Entre com seu nome:');
+            let Ano = prompt('Entre com o seu ano de nascimento:');
+            let Idade = 2025 - Ano;
+            confirm('Bem vindo, ' + Nome + ' sua idade é: ' + Idade + ' anos, confirma?');
+        </script>
+        -->
+
+        <!--
+        3) Implemente um programa javascript em que você entra com um prompt com a descrição 
+            “entre com seu nome”. Em seguida, será apresentado uma mensagem de confirmação:
+            “você confirma o nome: <o nome que você digitou>”.
+            Caso você confirma, será impresso um alerta na tela “olá <o nome que você digitou>” 
+            e o programa termina; Caso  contrário,  deverá  voltar  para  o  início  do  programa  
+            e  deve  solicitar  novamente,  via prompt, o seu nome.
+            <script>
+                let Nome = '';
+                let Confirmacao;
+                do {
+                    
+                Nome = prompt('Entre com seu nome:');
+                Confirmacao = confirm('Você confirma o nome: ' + Nome);
+            } while (Confirmacao == false);
+            alert('Olá, ' + Nome);
+            
+        </script>
+        -->
+
+        <!-- 
+        4) Implemente um programa javascript em que você entra com um prompt com seu nome, 
+        outro prompt com seu sobrenome, e o nome e sobrenome são apresentados em caixa alta 
+        em um único alerta.
+        
+        <script>
+            let Nome = prompt('Entre com o seu nome:');
+            let Sobrenome = prompt('Entre com o seu sobrenome:');
+            
+            alert('Seu nome completo é: ' + Nome + ' ' + Sobrenome);
+        </script>
+        -->
+
+        <!--
+        5) Crie um programa onde o usuário entra com uma string através de um prompt, 
+        e a mesma string  é  apresentada  com  um  espaço  entre  os  caracteres  em  um  
+        alerta  e  os  caracteres aparecerão em caixa alta. Exemplo: Charles vira: C H A R L E S
+        Para tabular utilize “\t”;
+        <script>
+            let Nome = prompt('Entre com o seu nome: ');
+            //alert(Nome.toUpperCase().split('').join(' '));
+            
+            let NomeTabulado = '';
+            
+            for (let i in Nome){
+                NomeTabulado += Nome[i] + '\t';
+            }
+            console.log(NomeTabulado.toUpperCase());
+        </script>
+        -->
+
+        <!-- 
+        6) Crie um programa onde o usuário entra com uma string através de um prompt, 
+        e a mesma string é apresentada verticalmente em um alerta. 
+            Exemplo: Charles vira
+            C 
+            h 
+            a 
+            r 
+            l 
+            e 
+            s
+            Para quebrar linha em um alerta use “\n”;
+            
+            <script>
+                let Palavra = prompt('Escreva a palavra: ');
+                let Palavra_Maiuscula = '';
+                for (let i in Palavra){
+                    Palavra_Maiuscula += Palavra[i] + '\n'; 
+                }
+                alert(Palavra_Maiuscula);
+                // console.log(NomeTabulado.toUpperCase());
+            </script>
+            -->
+
+            <!--
+            7) Crie um programa onde o usuário entra com uma string através de um prompt, 
+            e a mesma string é apresentada da seguinte forma. 
+
+            Exemplo: Charles vira C 1 h 2 a 3 r 4 l 5 e 6 s 7
+            <script>
+                let Palavra = prompt('Escreva a palavra: ');
+                let Palavra_Maiuscula = '';
+                let j = 0;
+                for (let i in Palavra){
+                    j++;
+                    Palavra_Maiuscula += Palavra[i] + ' ' + j + ' '; 
+                }
+                alert(Palavra_Maiuscula);
+            </script>
+            -->
+
+            <!--
+            8) Crie um programa onde o usuário entra com uma string através de um prompt, 
+            e a mesma string é apresentada da seguinte forma. 
+            Exemplo: Charles vira 
+            C 
+             h
+              a
+               r
+                l
+                 e
+                  s 
+                  <script>
+                      let Palavra = prompt('Escreva a palavra: ');
+                      let Palavra_Maiuscula = Palavra.toUpperCase();
+                      let outra = '';
+                      
+                      for (let i in Palavra_Maiuscula){
+                        outra += Palavra_Maiuscula[i] + '\n'; 
+                        for (let j = 0; j <= i; j++){
+                            outra += ' ';
+                        }                  
+                        
+                    }
+                    alert(outra);
+                </script>
+                -->
+
+                <!--
+                9)  Crie  um  programa  onde  o  usuário  entra  com  uma  string  através  
+                de  um  prompt,  e  o programa apresenta  a string invertida em um alerta.
+                -->
+                <script>
+                    let Nome = prompt('Entre com o seu nome: ');
+                    let tam = Nome.length;
+                    let NomeInvertido = 0;
+                    for (let i=tam; i>=0; i--){
+                        NomeInvertido += Nome[i];
+                    }
+                    alert(NomeInvertido);
+                </script>
+
+
+            
+
+
+</body>
+</html>
