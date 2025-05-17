@@ -174,11 +174,16 @@
                 <script>
                     let Nome = prompt('Entre com o seu nome: ');
                     let tam = Nome.length;
-                    let NomeInvertido = 0;
+                    let NomeInvertido = new Array(tam);
+                    let j = 0;
                     for (let i=tam; i>=0; i--){
-                        NomeInvertido += Nome[i];
+                        j = tam - i;
+                        NomeInvertido[j]=Nome[i];
+                        //alert(j);
                     }
-                    alert(NomeInvertido);
+                    let aux = NomeInvertido.toString();
+                    alert(aux);
+                    
                 </script>
 
 
